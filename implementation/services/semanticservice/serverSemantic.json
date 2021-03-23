@@ -1,0 +1,39 @@
+{
+  "scannerservice": {
+    "Position": {
+      "x": "http://www.ontology-of-units-of-measure.org/resource/om-2/millimetre",
+      "y": "http://www.ontology-of-units-of-measure.org/resource/om-2/millimetre"
+    },
+    "Time": {
+      "timestamp": "http://dbpedia.org/page/Unix_time"
+    }
+  },
+  "laservectorformat": {
+    "MarkingParams": {
+      "laserPower": "http://www.ontology-of-units-of-measure.org/resource/om-2/watt",
+      "laserSpeed": "http://www.ontology-of-units-of-measure.org/resource/om-2/millimetrePerSecond-Time",
+      "laserFocusShift": "http://www.ontology-of-units-of-measure.org/resource/om-2/millimetre",
+      "pointExposureTime": "http://dbpedia.org/page/Unix_time",
+      "jumpSpeed": "http://www.ontology-of-units-of-measure.org/resource/om-2/millimetrePerSecond-Time",
+      "repetitionRate": "http://www.ontology-of-units-of-measure.org/resource/om-2/hertz",
+      "wobFrequence": "http://www.ontology-of-units-of-measure.org/resource/om-2/hertz",
+      "wobAmpLong": "http://www.ontology-of-units-of-measure.org/resource/om-2/millimetre",
+      "wobAmpTrans": "http://www.ontology-of-units-of-measure.org/resource/om-2/millimetre"
+    },
+    "Layer": {
+      "zPos": "http://www.ontology-of-units-of-measure.org/resource/om-2/millimetre",
+      "xPos": "http://www.ontology-of-units-of-measure.org/resource/om-2/millimetre",
+      "yPost": "http://www.ontology-of-units-of-measure.org/resource/om-2/millimetre",
+      "xRot": "http://www.ontology-of-units-of-measure.org/resource/om-2/degree",
+      "yRot": "http://www.ontology-of-units-of-measure.org/resource/om-2/degree",
+      "zRot": "http://www.ontology-of-units-of-measure.org/resource/om-2/degree"
+    },
+    "GeometryInfo": {
+      "volume": "http://www.ontology-of-units-of-measure.org/resource/om-2/cubicMillimetre",
+      "supportVolume": "http://www.ontology-of-units-of-measure.org/resource/om-2/cubicMillimetre",
+      "buildHeight": "http://www.ontology-of-units-of-measure.org/resource/om-2/millimetre",
+      "surfaceArea": "http://www.ontology-of-units-of-measure.org/resource/om-2/squareMillimetre",
+      "projectedSurface": "http://www.ontology-of-units-of-measure.org/resource/om-2/squareMillimetre"
+    }
+  }
+}

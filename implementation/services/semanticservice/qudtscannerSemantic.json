@@ -1,0 +1,12 @@
+{
+  "scannerservice": {
+    "Position": {
+      "x": "unit:MilliM",
+      "y": "unit:MilliM"
+    },
+    "Time": {
+      "timestamp": "http://dbpedia.org/page/Unix_time"
+    }
+  }
+}
+
