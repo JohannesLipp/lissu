@@ -19,5 +19,5 @@ py_binary(
 
 python_grpc_library(
     name = "semantic_grpc",
-    deps = ["//proto/semanticservice:semanticservice_proto"]
+    deps = ["//implementation/proto/semanticservice:semanticservice_proto"]
 )

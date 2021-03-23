@@ -18,7 +18,6 @@ from implementation.library.omlib.measure import om, Point, Measure
 from implementation.library.omlib.omconstants import OM
 
 FLAGS = flags.FLAGS
-flags.DEFINE_integer("chunksize", 100000, "The size of your the datachunks you want to send")
 flags.DEFINE_string("host", "0.0.0.0:8080", "The Hostname of this service")
 
 class Semcheck(gp.SemanticCheckServicer):
