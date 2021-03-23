@@ -7,3 +7,5 @@ Prerequisites:
 - `pip install grpcio`
 - `pip install protobuf`
 - `pip install absl-py`
+
+Authors: Siyabend Sakik, Moritz Kröger, Johannes Lipp
