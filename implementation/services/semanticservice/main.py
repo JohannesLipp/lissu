@@ -13,9 +13,6 @@ from absl import logging
 from absl import app
 #Imports for the unit conversion
 import rdflib
-from implementation.library.omlib.constants import OM_IDS, SI
-from implementation.library.omlib.measure import om, Point, Measure
-from implementation.library.omlib.omconstants import OM
 
 FLAGS = flags.FLAGS
 flags.DEFINE_string("host", "0.0.0.0:8080", "The Hostname of this service")
@@ -75,26 +72,6 @@ class Semcheck(gp.SemanticCheckServicer):
         conversion_list = pb.ConversionList(keys = conversion_keys, source = conversion_source, destination = conversion_destination)
         response = pb.ServerResponse(response = False, description = error_description, conversionList = conversion_list)
         return response
-
-    #Unit conversion with omlib, seems not work properly
-    #Conversion possible if both values UNIT from same DIMENSION 
-    #Dimensions: Time, Length, Mass, Electric, Thermodynamic, Substance, Luminous; (SI)
-    # def unitConversion(self, request, context):
-    #     values = request.values
-    #     keys = request.conversionList.keys
-    #     source = request.conversionList.source
-    #     destination = request.conversionList.destination 
-    #     convertedValues = []
-
-    #     for i in range(0,len(values)):
-    #         omValue = om(values[i], OM.metre)
-    #         omValue.convert(destination[i])
-    #         convertedValues.append(omValue.numericalValue)
-
-    #     response = pb.ConversionRequest()
-    #     response.conversionList.CopyFrom(request.conversionList)
-    #     response.values = convertedValues
-    #     return response
 
     def unitConversion(self, request, context):
         values = request.values
